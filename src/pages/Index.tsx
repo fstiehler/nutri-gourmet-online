@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import MenuAccordion from "@/components/MenuAccordion";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import JoinUs from "@/components/JoinUs";
 import CtaBanner from "@/components/CtaBanner";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
