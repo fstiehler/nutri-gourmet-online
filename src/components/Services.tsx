@@ -1,5 +1,8 @@
 import { UtensilsCrossed, Truck, Building2 } from "lucide-react";
-import servicesImg from "@/assets/services-img.jpg";
+import refeitorio1 from "@/assets/refeitorio-sanco-1.png";
+import refeitorio2 from "@/assets/refeitorio-sanco-2.png";
+import refeitorio3 from "@/assets/refeitorio-sanco-3.png";
+import cozinha from "@/assets/cozinha-industrial.png";
 
 const services = [
   {
@@ -20,6 +23,13 @@ const services = [
     description:
       "Projetamos e construímos refeitórios completos ao firmar contrato com novos clientes.",
   },
+];
+
+const galleryImages = [
+  { src: refeitorio1, alt: "Refeitório Sanco - visão geral com logo Nutri Gourmet" },
+  { src: refeitorio2, alt: "Refeitório Sanco - área de mesas e buffet" },
+  { src: refeitorio3, alt: "Refeitório Sanco - ilha de buffet com plantas suspensas" },
+  { src: cozinha, alt: "Cozinha industrial equipada" },
 ];
 
 const Services = () => {
@@ -50,15 +60,23 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="rounded-2xl overflow-hidden shadow-elevated">
-          <img
-            src={servicesImg}
-            alt="Restaurante corporativo moderno"
-            loading="lazy"
-            width={800}
-            height={600}
-            className="w-full h-72 md:h-96 object-cover"
-          />
+        {/* Gallery */}
+        <div className="mb-6">
+          <p className="text-center text-muted-foreground text-sm mb-4">
+            Refeitório sob medida — <strong className="text-foreground">Empresa Sanco</strong>
+          </p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {galleryImages.map((img, i) => (
+            <div key={i} className="rounded-2xl overflow-hidden shadow-elevated">
+              <img
+                src={img.src}
+                alt={img.alt}
+                loading="lazy"
+                className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

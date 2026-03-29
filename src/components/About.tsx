@@ -1,20 +1,34 @@
-import aboutImg from "@/assets/about-img.jpg";
+import declotildesAntiga from "@/assets/declotildes-antiga.png";
+import declotildesAtual from "@/assets/declotildes-atual.png";
 
 const About = () => {
   return (
     <section id="sobre" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative">
-            <div className="gradient-warm absolute -inset-4 rounded-2xl opacity-20 blur-2xl" />
-            <img
-              src={aboutImg}
-              alt="Chef preparando refeições"
-              loading="lazy"
-              width={800}
-              height={600}
-              className="relative rounded-2xl shadow-elevated w-full object-cover aspect-[4/3]"
-            />
+          <div className="space-y-6">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative">
+                <div className="gradient-warm absolute -inset-3 rounded-2xl opacity-20 blur-2xl" />
+                <img
+                  src={declotildesAntiga}
+                  alt="Declotildes Villani nos primeiros anos da Nutri Gourmet"
+                  loading="lazy"
+                  className="relative rounded-2xl shadow-elevated w-full object-cover aspect-[4/3]"
+                />
+                <p className="text-xs text-muted-foreground text-center mt-2">Início da trajetória</p>
+              </div>
+              <div className="relative mt-8">
+                <div className="gradient-hero absolute -inset-3 rounded-2xl opacity-20 blur-2xl" />
+                <img
+                  src={declotildesAtual}
+                  alt="Declotildes Villani, fundadora da Nutri Gourmet"
+                  loading="lazy"
+                  className="relative rounded-2xl shadow-elevated w-full object-cover aspect-[4/3]"
+                />
+                <p className="text-xs text-muted-foreground text-center mt-2">Declotildes hoje</p>
+              </div>
+            </div>
           </div>
           <div>
             <p className="text-primary font-semibold tracking-widest uppercase text-sm mb-3">
