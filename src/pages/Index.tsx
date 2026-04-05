@@ -20,6 +20,7 @@ const Index = () => {
       <Services />
       <MenuAccordion />
       <Diferencial />
+      <NossosEspacos />
       <WhyChooseUs />
       <JoinUs />
       <CtaBanner />
