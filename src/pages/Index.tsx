@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import MenuAccordion from "@/components/MenuAccordion";
+import Diferencial from "@/components/Diferencial";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import JoinUs from "@/components/JoinUs";
 import CtaBanner from "@/components/CtaBanner";
