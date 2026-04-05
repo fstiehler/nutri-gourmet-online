@@ -18,6 +18,7 @@ const Index = () => {
       <About />
       <Services />
       <MenuAccordion />
+      <Diferencial />
       <WhyChooseUs />
       <JoinUs />
       <CtaBanner />
